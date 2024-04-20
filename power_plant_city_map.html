@@ -1,0 +1,2442 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bce981d2a47ede615913fd5bb1241c9b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bce981d2a47ede615913fd5bb1241c9b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bce981d2a47ede615913fd5bb1241c9b = L.map(
+                "map_bce981d2a47ede615913fd5bb1241c9b",
+                {
+                    center: [41.8719, 12.5674],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_70a442d2ce06bc7ebeb717d24ab3d161 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_70a442d2ce06bc7ebeb717d24ab3d161.addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var marker_5da62394ed58cc9ed583fcda474096a7 = L.marker(
+                [39.7118, 16.215],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_85c1b8ba6f30a035d075f8c851f5ded6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5da62394ed58cc9ed583fcda474096a7.setIcon(icon_85c1b8ba6f30a035d075f8c851f5ded6);
+        
+    
+        var popup_9d3ee2e43c156ab50614167cc43d4194 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28bbe22d6ad340d21db52cae272ed38c = $(`<div id="html_28bbe22d6ad340d21db52cae272ed38c" style="width: 100.0%; height: 100.0%;">Power Plant: ALTOMONTE (Gas)</div>`)[0];
+                popup_9d3ee2e43c156ab50614167cc43d4194.setContent(html_28bbe22d6ad340d21db52cae272ed38c);
+            
+        
+
+        marker_5da62394ed58cc9ed583fcda474096a7.bindPopup(popup_9d3ee2e43c156ab50614167cc43d4194)
+        ;
+
+        
+    
+    
+            var marker_a33db025ec378b9fd92af52a1d2b8de3 = L.marker(
+                [37.2814, 13.521],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_048bc270588fe40526524ae8f2801db4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a33db025ec378b9fd92af52a1d2b8de3.setIcon(icon_048bc270588fe40526524ae8f2801db4);
+        
+    
+        var popup_a2d0acfff4442882d66b12346f024874 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e42bc2ce8249d3896772c3e64f4651f3 = $(`<div id="html_e42bc2ce8249d3896772c3e64f4651f3" style="width: 100.0%; height: 100.0%;">Power Plant: API ENERGIA IGCC (Gas)</div>`)[0];
+                popup_a2d0acfff4442882d66b12346f024874.setContent(html_e42bc2ce8249d3896772c3e64f4651f3);
+            
+        
+
+        marker_a33db025ec378b9fd92af52a1d2b8de3.bindPopup(popup_a2d0acfff4442882d66b12346f024874)
+        ;
+
+        
+    
+    
+            var marker_263645b515aa2874494dca2e1ab006ab = L.marker(
+                [45.4511, 12.2239],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_d74c1cf61afe09992fb5208e54212f8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_263645b515aa2874494dca2e1ab006ab.setIcon(icon_d74c1cf61afe09992fb5208e54212f8a);
+        
+    
+        var popup_1b1158814bfa8d614b60115fb55d4368 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cce092bc14e540f3c97e78a56a5546df = $(`<div id="html_cce092bc14e540f3c97e78a56a5546df" style="width: 100.0%; height: 100.0%;">Power Plant: AZOTATI (Gas)</div>`)[0];
+                popup_1b1158814bfa8d614b60115fb55d4368.setContent(html_cce092bc14e540f3c97e78a56a5546df);
+            
+        
+
+        marker_263645b515aa2874494dca2e1ab006ab.bindPopup(popup_1b1158814bfa8d614b60115fb55d4368)
+        ;
+
+        
+    
+    
+            var marker_cbc4ee2b7207457b64cec712bba762e6 = L.marker(
+                [45.4314, 12.2468],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_70601d83d0bfd9d9d14e722b725a3961 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_cbc4ee2b7207457b64cec712bba762e6.setIcon(icon_70601d83d0bfd9d9d14e722b725a3961);
+        
+    
+        var popup_3c8b36c388e13485bd3d2b0b23652525 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_deff30f9ae072c15a37c7c3f5ab7d015 = $(`<div id="html_deff30f9ae072c15a37c7c3f5ab7d015" style="width: 100.0%; height: 100.0%;">Power Plant: Andrea Palladio power station (FUSINA) (Coal)</div>`)[0];
+                popup_3c8b36c388e13485bd3d2b0b23652525.setContent(html_deff30f9ae072c15a37c7c3f5ab7d015);
+            
+        
+
+        marker_cbc4ee2b7207457b64cec712bba762e6.bindPopup(popup_3c8b36c388e13485bd3d2b0b23652525)
+        ;
+
+        
+    
+    
+            var marker_7410806ed6733313393feeead3fcd809 = L.marker(
+                [42.2002, 13.8398],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_b86a9717e594fdaa53e1a5845005742c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7410806ed6733313393feeead3fcd809.setIcon(icon_b86a9717e594fdaa53e1a5845005742c);
+        
+    
+        var popup_277898befd66429c6b1a88435cc03ff2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_796d8ffe261975b8b535941aefa05f81 = $(`<div id="html_796d8ffe261975b8b535941aefa05f81" style="width: 100.0%; height: 100.0%;">Power Plant: BUSSI (Gas)</div>`)[0];
+                popup_277898befd66429c6b1a88435cc03ff2.setContent(html_796d8ffe261975b8b535941aefa05f81);
+            
+        
+
+        marker_7410806ed6733313393feeead3fcd809.bindPopup(popup_277898befd66429c6b1a88435cc03ff2)
+        ;
+
+        
+    
+    
+            var marker_3c93d216d280497ccc912caae1393f37 = L.marker(
+                [40.6432, 17.9802],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_43f8d24df04114b7982da6c9c3d565d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_3c93d216d280497ccc912caae1393f37.setIcon(icon_43f8d24df04114b7982da6c9c3d565d8);
+        
+    
+        var popup_26b403892b8d4d48261b4c3b2b0e484a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddae035ae66d52865d602a8bc90cdbad = $(`<div id="html_ddae035ae66d52865d602a8bc90cdbad" style="width: 100.0%; height: 100.0%;">Power Plant: Brindisi Nord power station (Coal)</div>`)[0];
+                popup_26b403892b8d4d48261b4c3b2b0e484a.setContent(html_ddae035ae66d52865d602a8bc90cdbad);
+            
+        
+
+        marker_3c93d216d280497ccc912caae1393f37.bindPopup(popup_26b403892b8d4d48261b4c3b2b0e484a)
+        ;
+
+        
+    
+    
+            var marker_2e3cac513cf8a2d58be934637e8a1a3c = L.marker(
+                [40.5632, 18.0318],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_f08b2624abc62cb24bbf4e0cce64dd8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_2e3cac513cf8a2d58be934637e8a1a3c.setIcon(icon_f08b2624abc62cb24bbf4e0cce64dd8e);
+        
+    
+        var popup_6163d317a3b0209953929ed23be3ba29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1b4f78877618716da6118ab339ae9c5 = $(`<div id="html_d1b4f78877618716da6118ab339ae9c5" style="width: 100.0%; height: 100.0%;">Power Plant: Brindisi Sud power station (Coal)</div>`)[0];
+                popup_6163d317a3b0209953929ed23be3ba29.setContent(html_d1b4f78877618716da6118ab339ae9c5);
+            
+        
+
+        marker_2e3cac513cf8a2d58be934637e8a1a3c.bindPopup(popup_6163d317a3b0209953929ed23be3ba29)
+        ;
+
+        
+    
+    
+            var marker_e795b5dbbef7014ab082054bceab2dfb = L.marker(
+                [41.2014, 15.4762],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_8989f6994abf18fab047c01516bb75b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e795b5dbbef7014ab082054bceab2dfb.setIcon(icon_8989f6994abf18fab047c01516bb75b8);
+        
+    
+        var popup_bab58b2dc11fef3ff47d5b0bd46d59b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7239400f837e2fe6e77bb26ada4819e1 = $(`<div id="html_7239400f837e2fe6e77bb26ada4819e1" style="width: 100.0%; height: 100.0%;">Power Plant: CANDELA (Gas)</div>`)[0];
+                popup_bab58b2dc11fef3ff47d5b0bd46d59b3.setContent(html_7239400f837e2fe6e77bb26ada4819e1);
+            
+        
+
+        marker_e795b5dbbef7014ab082054bceab2dfb.bindPopup(popup_bab58b2dc11fef3ff47d5b0bd46d59b3)
+        ;
+
+        
+    
+    
+            var marker_f6c57c539974ba9aa308bd1522e14d6b = L.marker(
+                [41.5616, 12.6337],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_1e528119d0807632bee8a0d1624691f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f6c57c539974ba9aa308bd1522e14d6b.setIcon(icon_1e528119d0807632bee8a0d1624691f8);
+        
+    
+        var popup_ee18b9d1c0860110a567cbabd3425e0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47fbf7ab345b7e8621b09bd880b38292 = $(`<div id="html_47fbf7ab345b7e8621b09bd880b38292" style="width: 100.0%; height: 100.0%;">Power Plant: CCGT APRILIA (Gas)</div>`)[0];
+                popup_ee18b9d1c0860110a567cbabd3425e0c.setContent(html_47fbf7ab345b7e8621b09bd880b38292);
+            
+        
+
+        marker_f6c57c539974ba9aa308bd1522e14d6b.bindPopup(popup_ee18b9d1c0860110a567cbabd3425e0c)
+        ;
+
+        
+    
+    
+            var marker_4ecd47747b5e8e5ea16d2b9d45787797 = L.marker(
+                [42.0458, 13.5475],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_2a3598048ccce22429047cc5d366995b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4ecd47747b5e8e5ea16d2b9d45787797.setIcon(icon_2a3598048ccce22429047cc5d366995b);
+        
+    
+        var popup_4d6b10217d316307005273ee1f0ddaa7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85176decaf422dfa03be000012788a39 = $(`<div id="html_85176decaf422dfa03be000012788a39" style="width: 100.0%; height: 100.0%;">Power Plant: CELANO (Gas)</div>`)[0];
+                popup_4d6b10217d316307005273ee1f0ddaa7.setContent(html_85176decaf422dfa03be000012788a39);
+            
+        
+
+        marker_4ecd47747b5e8e5ea16d2b9d45787797.bindPopup(popup_4d6b10217d316307005273ee1f0ddaa7)
+        ;
+
+        
+    
+    
+            var marker_486df82496e79da7755223949c0ac923 = L.marker(
+                [39.1022, 17.0325],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_784173bdf859ed6191e155fb10ae9c8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_486df82496e79da7755223949c0ac923.setIcon(icon_784173bdf859ed6191e155fb10ae9c8d);
+        
+    
+        var popup_0f55a14c308671cd83c92284df58fd03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa827c44a688749375449d6b37caa7d8 = $(`<div id="html_fa827c44a688749375449d6b37caa7d8" style="width: 100.0%; height: 100.0%;">Power Plant: CENTRALE DI SCANDALE (Gas)</div>`)[0];
+                popup_0f55a14c308671cd83c92284df58fd03.setContent(html_fa827c44a688749375449d6b37caa7d8);
+            
+        
+
+        marker_486df82496e79da7755223949c0ac923.bindPopup(popup_0f55a14c308671cd83c92284df58fd03)
+        ;
+
+        
+    
+    
+            var marker_26a05e5737b535d21fe4397f5c612a94 = L.marker(
+                [41.0092, 14.2281],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_3cc637fda47925b8af5593a2ad2d4b05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_26a05e5737b535d21fe4397f5c612a94.setIcon(icon_3cc637fda47925b8af5593a2ad2d4b05);
+        
+    
+        var popup_c4a1ef663cfa1e7746cfc5abde2ba63c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78b63abc1faa9e6a31a397cc08bc0472 = $(`<div id="html_78b63abc1faa9e6a31a397cc08bc0472" style="width: 100.0%; height: 100.0%;">Power Plant: CENTRALE DI TEVEROLA (Gas)</div>`)[0];
+                popup_c4a1ef663cfa1e7746cfc5abde2ba63c.setContent(html_78b63abc1faa9e6a31a397cc08bc0472);
+            
+        
+
+        marker_26a05e5737b535d21fe4397f5c612a94.bindPopup(popup_c4a1ef663cfa1e7746cfc5abde2ba63c)
+        ;
+
+        
+    
+    
+            var marker_09bb6074a75f412f1b7875c6ecd013d5 = L.marker(
+                [45.2268, 9.6377],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_9eef7ddfe5cba160db92a2d8a7ec4a48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09bb6074a75f412f1b7875c6ecd013d5.setIcon(icon_9eef7ddfe5cba160db92a2d8a7ec4a48);
+        
+    
+        var popup_f228a3225b2717f14a10a4c00f543251 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_024f45912f3c5f42c80f47fe6602184f = $(`<div id="html_024f45912f3c5f42c80f47fe6602184f" style="width: 100.0%; height: 100.0%;">Power Plant: CENTRALE DI TURANO LODIGIANO - BERTONICO (LO) (Gas)</div>`)[0];
+                popup_f228a3225b2717f14a10a4c00f543251.setContent(html_024f45912f3c5f42c80f47fe6602184f);
+            
+        
+
+        marker_09bb6074a75f412f1b7875c6ecd013d5.bindPopup(popup_f228a3225b2717f14a10a4c00f543251)
+        ;
+
+        
+    
+    
+            var marker_ba643c67ea8681c2f73c4befb630c066 = L.marker(
+                [45.1856, 7.9016],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_d8e337249aa3e4e705bc174a7255b986 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba643c67ea8681c2f73c4befb630c066.setIcon(icon_d8e337249aa3e4e705bc174a7255b986);
+        
+    
+        var popup_45c9c15d64e922694d628205cfc5a9b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bef340e0142f895ae480004ab9fba7b = $(`<div id="html_9bef340e0142f895ae480004ab9fba7b" style="width: 100.0%; height: 100.0%;">Power Plant: CHIVASSO (Gas)</div>`)[0];
+                popup_45c9c15d64e922694d628205cfc5a9b4.setContent(html_9bef340e0142f895ae480004ab9fba7b);
+            
+        
+
+        marker_ba643c67ea8681c2f73c4befb630c066.bindPopup(popup_45c9c15d64e922694d628205cfc5a9b4)
+        ;
+
+        
+    
+    
+            var marker_38e7104b32912339f9331477ebb55965 = L.marker(
+                [45.3993, 10.7142],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_4c25edd2c03af1719d8546a9612183cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_38e7104b32912339f9331477ebb55965.setIcon(icon_4c25edd2c03af1719d8546a9612183cc);
+        
+    
+        var popup_8e58a7560195cd6bbe3cb89aed9201fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6637862700f349aabeb05d86041cc93 = $(`<div id="html_c6637862700f349aabeb05d86041cc93" style="width: 100.0%; height: 100.0%;">Power Plant: CTE DEL MINCIO (Gas)</div>`)[0];
+                popup_8e58a7560195cd6bbe3cb89aed9201fd.setContent(html_c6637862700f349aabeb05d86041cc93);
+            
+        
+
+        marker_38e7104b32912339f9331477ebb55965.bindPopup(popup_8e58a7560195cd6bbe3cb89aed9201fd)
+        ;
+
+        
+    
+    
+            var marker_c57411d4c9455494572d0d263caabeb2 = L.marker(
+                [37.1313, 15.2014],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_f12702fa13da790e89c9ec71e748795b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c57411d4c9455494572d0d263caabeb2.setIcon(icon_f12702fa13da790e89c9ec71e748795b);
+        
+    
+        var popup_7f9d48fdebd0a21a165fcc65f2060ca4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44a44aaac5876024fa4a6aafb2730954 = $(`<div id="html_44a44aaac5876024fa4a6aafb2730954" style="width: 100.0%; height: 100.0%;">Power Plant: CTE NUCE NORD (Gas)</div>`)[0];
+                popup_7f9d48fdebd0a21a165fcc65f2060ca4.setContent(html_44a44aaac5876024fa4a6aafb2730954);
+            
+        
+
+        marker_c57411d4c9455494572d0d263caabeb2.bindPopup(popup_7f9d48fdebd0a21a165fcc65f2060ca4)
+        ;
+
+        
+    
+    
+            var marker_cb2c4ed16579cf5b44a608edd5de0bd0 = L.marker(
+                [42.3496, 14.4039],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_7c423a0d3d8eb5b73c6f9929e2005e32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb2c4ed16579cf5b44a608edd5de0bd0.setIcon(icon_7c423a0d3d8eb5b73c6f9929e2005e32);
+        
+    
+        var popup_aab43f85c4a10c3b4339fc9a86d2e1c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81c98aef87b2fe49c6c7a336acc528ec = $(`<div id="html_81c98aef87b2fe49c6c7a336acc528ec" style="width: 100.0%; height: 100.0%;">Power Plant: CTE TAMARETE (Gas)</div>`)[0];
+                popup_aab43f85c4a10c3b4339fc9a86d2e1c5.setContent(html_81c98aef87b2fe49c6c7a336acc528ec);
+            
+        
+
+        marker_cb2c4ed16579cf5b44a608edd5de0bd0.bindPopup(popup_aab43f85c4a10c3b4339fc9a86d2e1c5)
+        ;
+
+        
+    
+    
+            var marker_bd9a365a8cd1b7c214601ff2219dcf61 = L.marker(
+                [45.5115, 9.5098],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_4e6cfc599deae6e6e8505fbb09c2f9be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bd9a365a8cd1b7c214601ff2219dcf61.setIcon(icon_4e6cfc599deae6e6e8505fbb09c2f9be);
+        
+    
+        var popup_50bc3d79b288e202fa7ee12d5a51fc73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa42249f8793384202b2b518cc4ce081 = $(`<div id="html_fa42249f8793384202b2b518cc4ce081" style="width: 100.0%; height: 100.0%;">Power Plant: Cassano d’Adda (Gas)</div>`)[0];
+                popup_50bc3d79b288e202fa7ee12d5a51fc73.setContent(html_fa42249f8793384202b2b518cc4ce081);
+            
+        
+
+        marker_bd9a365a8cd1b7c214601ff2219dcf61.bindPopup(popup_50bc3d79b288e202fa7ee12d5a51fc73)
+        ;
+
+        
+    
+    
+            var marker_3bd3c369531670e38bb2b869e0a84973 = L.marker(
+                [45.2372, 8.1932],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_64c91701a5d0c4ffe92d9e76cd70bbaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3bd3c369531670e38bb2b869e0a84973.setIcon(icon_64c91701a5d0c4ffe92d9e76cd70bbaf);
+        
+    
+        var popup_4dde0add875413ed26e8cb731187572c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05cc23d322de252da65c4740030d6325 = $(`<div id="html_05cc23d322de252da65c4740030d6325" style="width: 100.0%; height: 100.0%;">Power Plant: E.ON C.TE LIVORNO FERRARIS (Gas)</div>`)[0];
+                popup_4dde0add875413ed26e8cb731187572c.setContent(html_05cc23d322de252da65c4740030d6325);
+            
+        
+
+        marker_3bd3c369531670e38bb2b869e0a84973.bindPopup(popup_4dde0add875413ed26e8cb731187572c)
+        ;
+
+        
+    
+    
+            var marker_1cbe4cc8fc6db0f2c4c4cbbc891bc64d = L.marker(
+                [41.9369, 15.0004],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_618ff434dbc40230282ab3bc2475cf95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1cbe4cc8fc6db0f2c4c4cbbc891bc64d.setIcon(icon_618ff434dbc40230282ab3bc2475cf95);
+        
+    
+        var popup_c229b13f27a265feb68a91fb0efb726f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e4a2ab408f8f7bff1219af81223f9fb = $(`<div id="html_5e4a2ab408f8f7bff1219af81223f9fb" style="width: 100.0%; height: 100.0%;">Power Plant: ENERGIA MOLISE (Gas)</div>`)[0];
+                popup_c229b13f27a265feb68a91fb0efb726f.setContent(html_5e4a2ab408f8f7bff1219af81223f9fb);
+            
+        
+
+        marker_1cbe4cc8fc6db0f2c4c4cbbc891bc64d.bindPopup(popup_c229b13f27a265feb68a91fb0efb726f)
+        ;
+
+        
+    
+    
+            var marker_88f53616531a6feb0b301c4980d6ef11 = L.marker(
+                [40.6293, 18.0033],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_7a41dd229487639f1491590789a310c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_88f53616531a6feb0b301c4980d6ef11.setIcon(icon_7a41dd229487639f1491590789a310c0);
+        
+    
+        var popup_722bc227ecbc91ca830cda9594e6198c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_677d32f1e4e2731545b2da80c1028e04 = $(`<div id="html_677d32f1e4e2731545b2da80c1028e04" style="width: 100.0%; height: 100.0%;">Power Plant: ENIPOWER BRINDISI (Gas)</div>`)[0];
+                popup_722bc227ecbc91ca830cda9594e6198c.setContent(html_677d32f1e4e2731545b2da80c1028e04);
+            
+        
+
+        marker_88f53616531a6feb0b301c4980d6ef11.bindPopup(popup_722bc227ecbc91ca830cda9594e6198c)
+        ;
+
+        
+    
+    
+            var marker_a709bc42dd9d8737b5e2dfd4d52d7123 = L.marker(
+                [45.512, 9.509],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_cb5da31b4dc0785dca0331b412bde853 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a709bc42dd9d8737b5e2dfd4d52d7123.setIcon(icon_cb5da31b4dc0785dca0331b412bde853);
+        
+    
+        var popup_bd26ebf5e17aff8e8ce573a3b5cfe6e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f776098476895f39beb894b6445fd17 = $(`<div id="html_5f776098476895f39beb894b6445fd17" style="width: 100.0%; height: 100.0%;">Power Plant: ENIPOWER RAVENNA (Gas)</div>`)[0];
+                popup_bd26ebf5e17aff8e8ce573a3b5cfe6e3.setContent(html_5f776098476895f39beb894b6445fd17);
+            
+        
+
+        marker_a709bc42dd9d8737b5e2dfd4d52d7123.bindPopup(popup_bd26ebf5e17aff8e8ce573a3b5cfe6e3)
+        ;
+
+        
+    
+    
+            var marker_e27fd4deb0367546a73e3686762e9e99 = L.marker(
+                [40.8461, 8.3068],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_9c3ced83d49598cca0292fdee76155ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_e27fd4deb0367546a73e3686762e9e99.setIcon(icon_9c3ced83d49598cca0292fdee76155ae);
+        
+    
+        var popup_b3cb2c9ec055cb9ff74d018eb5ec10db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_184787db70ba2b2c89c07debf4633c21 = $(`<div id="html_184787db70ba2b2c89c07debf4633c21" style="width: 100.0%; height: 100.0%;">Power Plant: Fiume Santo power station (Coal)</div>`)[0];
+                popup_b3cb2c9ec055cb9ff74d018eb5ec10db.setContent(html_184787db70ba2b2c89c07debf4633c21);
+            
+        
+
+        marker_e27fd4deb0367546a73e3686762e9e99.bindPopup(popup_b3cb2c9ec055cb9ff74d018eb5ec10db)
+        ;
+
+        
+    
+    
+            var marker_93a5b26fd09b1956466b986877a69a43 = L.marker(
+                [42.0502, 14.5639],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_537bf907fdfc6564823ebebca4c60023 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_93a5b26fd09b1956466b986877a69a43.setIcon(icon_537bf907fdfc6564823ebebca4c60023);
+        
+    
+        var popup_072344f55ed12b6841271d3888bcbf18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcf55f7dffd002f085796bc4fe2cd03c = $(`<div id="html_fcf55f7dffd002f085796bc4fe2cd03c" style="width: 100.0%; height: 100.0%;">Power Plant: GISSI (Gas)</div>`)[0];
+                popup_072344f55ed12b6841271d3888bcbf18.setContent(html_fcf55f7dffd002f085796bc4fe2cd03c);
+            
+        
+
+        marker_93a5b26fd09b1956466b986877a69a43.bindPopup(popup_072344f55ed12b6841271d3888bcbf18)
+        ;
+
+        
+    
+    
+            var marker_db5303c74c34e0781bf40290ad9562f9 = L.marker(
+                [37.1399, 15.2158],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_b40e084498de79dc8b484b0ac05cc093 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db5303c74c34e0781bf40290ad9562f9.setIcon(icon_b40e084498de79dc8b484b0ac05cc093);
+        
+    
+        var popup_eb645b3108edcf957eac427b5efce45d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e96f3db62df624f6f53ac58c10ff9b2 = $(`<div id="html_6e96f3db62df624f6f53ac58c10ff9b2" style="width: 100.0%; height: 100.0%;">Power Plant: ISAB ENERGY (Gas)</div>`)[0];
+                popup_eb645b3108edcf957eac427b5efce45d.setContent(html_6e96f3db62df624f6f53ac58c10ff9b2);
+            
+        
+
+        marker_db5303c74c34e0781bf40290ad9562f9.bindPopup(popup_eb645b3108edcf957eac427b5efce45d)
+        ;
+
+        
+    
+    
+            var marker_65a804ad41982e704700c4cd7a6b3cd9 = L.marker(
+                [43.5537, 13.285],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_cd2aa8efacbb412156692701f13f2f9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_65a804ad41982e704700c4cd7a6b3cd9.setIcon(icon_cd2aa8efacbb412156692701f13f2f9b);
+        
+    
+        var popup_1028a252264137f337ea79a59401c106 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c07a0b9d5917ddf38155f98ed94ae852 = $(`<div id="html_c07a0b9d5917ddf38155f98ed94ae852" style="width: 100.0%; height: 100.0%;">Power Plant: JESI (Gas)</div>`)[0];
+                popup_1028a252264137f337ea79a59401c106.setContent(html_c07a0b9d5917ddf38155f98ed94ae852);
+            
+        
+
+        marker_65a804ad41982e704700c4cd7a6b3cd9.bindPopup(popup_1028a252264137f337ea79a59401c106)
+        ;
+
+        
+    
+    
+            var marker_28ee52a1ed534a9ea664490c1cff077a = L.marker(
+                [45.0904, 9.4805],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_18a4a0374dcea10800a26cb812cce276 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28ee52a1ed534a9ea664490c1cff077a.setIcon(icon_18a4a0374dcea10800a26cb812cce276);
+        
+    
+        var popup_8640be27f820520791d1a46ff57479ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f433671a5a91a3781653d21cad38b65 = $(`<div id="html_0f433671a5a91a3781653d21cad38b65" style="width: 100.0%; height: 100.0%;">Power Plant: LA CASELLA C.LE (Gas)</div>`)[0];
+                popup_8640be27f820520791d1a46ff57479ec.setContent(html_0f433671a5a91a3781653d21cad38b65);
+            
+        
+
+        marker_28ee52a1ed534a9ea664490c1cff077a.bindPopup(popup_8640be27f820520791d1a46ff57479ec)
+        ;
+
+        
+    
+    
+            var marker_7f06bda15f0b8a0abd0a1efe08185727 = L.marker(
+                [41.8055, 14.9193],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_66f2796d38971a312707d62c8f1c65ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7f06bda15f0b8a0abd0a1efe08185727.setIcon(icon_66f2796d38971a312707d62c8f1c65ea);
+        
+    
+        var popup_a967b950d9f6cb2e543639b5e1cf20f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51471b8e269891da043aff053dac7079 = $(`<div id="html_51471b8e269891da043aff053dac7079" style="width: 100.0%; height: 100.0%;">Power Plant: LARINO TG (Gas)</div>`)[0];
+                popup_a967b950d9f6cb2e543639b5e1cf20f3.setContent(html_51471b8e269891da043aff053dac7079);
+            
+        
+
+        marker_7f06bda15f0b8a0abd0a1efe08185727.bindPopup(popup_a967b950d9f6cb2e543639b5e1cf20f3)
+        ;
+
+        
+    
+    
+            var marker_bd132e550dc480c06aaaadb287f96774 = L.marker(
+                [45.163, 7.7505],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_e5835ea897e5fb29ccebd857d6c8e218 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bd132e550dc480c06aaaadb287f96774.setIcon(icon_e5835ea897e5fb29ccebd857d6c8e218);
+        
+    
+        var popup_b5550b9ca1642acf2cb22cc327643769 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b393a8215e6b4f977e9ac4ae2c11e234 = $(`<div id="html_b393a8215e6b4f977e9ac4ae2c11e234" style="width: 100.0%; height: 100.0%;">Power Plant: LEINI (Gas)</div>`)[0];
+                popup_b5550b9ca1642acf2cb22cc327643769.setContent(html_b393a8215e6b4f977e9ac4ae2c11e234);
+            
+        
+
+        marker_bd132e550dc480c06aaaadb287f96774.bindPopup(popup_b5550b9ca1642acf2cb22cc327643769)
+        ;
+
+        
+    
+    
+            var marker_405107f463f03bff9c40354ac3cf393e = L.marker(
+                [45.4458, 12.2552],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_038ff0574460aa43f20853a7068a749e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_405107f463f03bff9c40354ac3cf393e.setIcon(icon_038ff0574460aa43f20853a7068a749e);
+        
+    
+        var popup_98c527d74a7669147c1ffb73d218f9fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcffeaaea942edc7dda8af8932d7e17e = $(`<div id="html_dcffeaaea942edc7dda8af8932d7e17e" style="width: 100.0%; height: 100.0%;">Power Plant: LEVANTE (Gas)</div>`)[0];
+                popup_98c527d74a7669147c1ffb73d218f9fd.setContent(html_dcffeaaea942edc7dda8af8932d7e17e);
+            
+        
+
+        marker_405107f463f03bff9c40354ac3cf393e.bindPopup(popup_98c527d74a7669147c1ffb73d218f9fd)
+        ;
+
+        
+    
+    
+            var marker_f862d1da2de2b95c7f99cd02d3e56ec6 = L.marker(
+                [44.1118, 9.8743],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_f8db709a03033c07248ddbb2ff6acaec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_f862d1da2de2b95c7f99cd02d3e56ec6.setIcon(icon_f8db709a03033c07248ddbb2ff6acaec);
+        
+    
+        var popup_df38f1cccbdb5a968f0ebd0f8f4918ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c29bd2660dfdd4b146f6daf6a74e0aa = $(`<div id="html_3c29bd2660dfdd4b146f6daf6a74e0aa" style="width: 100.0%; height: 100.0%;">Power Plant: La Spezia power station (Coal)</div>`)[0];
+                popup_df38f1cccbdb5a968f0ebd0f8f4918ef.setContent(html_3c29bd2660dfdd4b146f6daf6a74e0aa);
+            
+        
+
+        marker_f862d1da2de2b95c7f99cd02d3e56ec6.bindPopup(popup_df38f1cccbdb5a968f0ebd0f8f4918ef)
+        ;
+
+        
+    
+    
+            var marker_c1a18bd84149ff02c0b57e050d857053 = L.marker(
+                [38.2212, 15.2383],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_0d6dc9e839fbcec0ba06535bc182d760 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c1a18bd84149ff02c0b57e050d857053.setIcon(icon_0d6dc9e839fbcec0ba06535bc182d760);
+        
+    
+        var popup_795d2337a93a002b9919f41dac4eabe6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_571404690833cab975c66e903797b08a = $(`<div id="html_571404690833cab975c66e903797b08a" style="width: 100.0%; height: 100.0%;">Power Plant: MILAZZO (Gas)</div>`)[0];
+                popup_795d2337a93a002b9919f41dac4eabe6.setContent(html_571404690833cab975c66e903797b08a);
+            
+        
+
+        marker_c1a18bd84149ff02c0b57e050d857053.bindPopup(popup_795d2337a93a002b9919f41dac4eabe6)
+        ;
+
+        
+    
+    
+            var marker_643efda5b4e1fde801448680079d6841 = L.marker(
+                [44.993, 7.6755],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_16cfd0baf1d625f884015fcf25373a46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_643efda5b4e1fde801448680079d6841.setIcon(icon_16cfd0baf1d625f884015fcf25373a46);
+        
+    
+        var popup_89670ce6d43f20691be63ee48e3c9628 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe9488b6e4517248f8bbe25367a25908 = $(`<div id="html_fe9488b6e4517248f8bbe25367a25908" style="width: 100.0%; height: 100.0%;">Power Plant: MONCALIERI (Gas)</div>`)[0];
+                popup_89670ce6d43f20691be63ee48e3c9628.setContent(html_fe9488b6e4517248f8bbe25367a25908);
+            
+        
+
+        marker_643efda5b4e1fde801448680079d6841.bindPopup(popup_89670ce6d43f20691be63ee48e3c9628)
+        ;
+
+        
+    
+    
+            var marker_22b4bca5bb20f2a3e7845170fa8cf39c = L.marker(
+                [42.3572, 11.5373],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_973304da694da2fe27417d2edc0fec7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_22b4bca5bb20f2a3e7845170fa8cf39c.setIcon(icon_973304da694da2fe27417d2edc0fec7f);
+        
+    
+        var popup_618a28501eea64b015d4c9da0f0c5996 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1227fc23c9053ef109424f0d313d5ca = $(`<div id="html_c1227fc23c9053ef109424f0d313d5ca" style="width: 100.0%; height: 100.0%;">Power Plant: MONTALTO (Alessandro Volta) (Gas)</div>`)[0];
+                popup_618a28501eea64b015d4c9da0f0c5996.setContent(html_c1227fc23c9053ef109424f0d313d5ca);
+            
+        
+
+        marker_22b4bca5bb20f2a3e7845170fa8cf39c.bindPopup(popup_618a28501eea64b015d4c9da0f0c5996)
+        ;
+
+        
+    
+    
+            var marker_773a3a3c5d6a8de8a9de25baba408528 = L.marker(
+                [41.0197, 14.37],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_39be134767b9143d2e7921d48351fe81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_773a3a3c5d6a8de8a9de25baba408528.setIcon(icon_39be134767b9143d2e7921d48351fe81);
+        
+    
+        var popup_96ef8ec61b06378d27754abe3df2df73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23c72b6c0d5ddbc0f7875233695142ae = $(`<div id="html_23c72b6c0d5ddbc0f7875233695142ae" style="width: 100.0%; height: 100.0%;">Power Plant: Maddaloni (Gas)</div>`)[0];
+                popup_96ef8ec61b06378d27754abe3df2df73.setContent(html_23c72b6c0d5ddbc0f7875233695142ae);
+            
+        
+
+        marker_773a3a3c5d6a8de8a9de25baba408528.bindPopup(popup_96ef8ec61b06378d27754abe3df2df73)
+        ;
+
+        
+    
+    
+            var marker_8ca1f1d972a1f42949f265dd8c8f3a5b = L.marker(
+                [45.7979, 13.5455],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_636500eb73c9ac846b0005f861fb0817 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_8ca1f1d972a1f42949f265dd8c8f3a5b.setIcon(icon_636500eb73c9ac846b0005f861fb0817);
+        
+    
+        var popup_bc9d1139c686cdd4ed97db14926ad2e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfc049a7b6233d6cfe0654d5a9e1a538 = $(`<div id="html_cfc049a7b6233d6cfe0654d5a9e1a538" style="width: 100.0%; height: 100.0%;">Power Plant: Monfalcone power station (Coal)</div>`)[0];
+                popup_bc9d1139c686cdd4ed97db14926ad2e2.setContent(html_cfc049a7b6233d6cfe0654d5a9e1a538);
+            
+        
+
+        marker_8ca1f1d972a1f42949f265dd8c8f3a5b.bindPopup(popup_bc9d1139c686cdd4ed97db14926ad2e2)
+        ;
+
+        
+    
+    
+            var marker_ac1ff27fd4f315f1ff60d92e0f1f5177 = L.marker(
+                [40.8339, 14.3006],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_6ec44651456fbc0d33bd9636974ac11a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ac1ff27fd4f315f1ff60d92e0f1f5177.setIcon(icon_6ec44651456fbc0d33bd9636974ac11a);
+        
+    
+        var popup_63b60c1ab1187a7757d3fe58c5b36e27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4d446a8be74a9869b42bf1c7faca199 = $(`<div id="html_f4d446a8be74a9869b42bf1c7faca199" style="width: 100.0%; height: 100.0%;">Power Plant: NAPOLI L (Gas)</div>`)[0];
+                popup_63b60c1ab1187a7757d3fe58c5b36e27.setContent(html_f4d446a8be74a9869b42bf1c7faca199);
+            
+        
+
+        marker_ac1ff27fd4f315f1ff60d92e0f1f5177.bindPopup(popup_63b60c1ab1187a7757d3fe58c5b36e27)
+        ;
+
+        
+    
+    
+            var marker_929c4cc2498af56cc248bc9e87167f52 = L.marker(
+                [45.0603, 11.1374],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_448f746dd2f994fa0476db8dfbff8aa6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_929c4cc2498af56cc248bc9e87167f52.setIcon(icon_448f746dd2f994fa0476db8dfbff8aa6);
+        
+    
+        var popup_bef7c460377e679b162a433dd07b8d11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cf3651d9a40e013854714115f954788 = $(`<div id="html_1cf3651d9a40e013854714115f954788" style="width: 100.0%; height: 100.0%;">Power Plant: OSTIGLIA (Gas)</div>`)[0];
+                popup_bef7c460377e679b162a433dd07b8d11.setContent(html_1cf3651d9a40e013854714115f954788);
+            
+        
+
+        marker_929c4cc2498af56cc248bc9e87167f52.bindPopup(popup_bef7c460377e679b162a433dd07b8d11)
+        ;
+
+        
+    
+    
+            var marker_0484e1e0cc277fa37a88ef3fff3b5a2b = L.marker(
+                [45.0543, 9.7086],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_20602a771141b0364c6c4f7c5fb6f3aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0484e1e0cc277fa37a88ef3fff3b5a2b.setIcon(icon_20602a771141b0364c6c4f7c5fb6f3aa);
+        
+    
+        var popup_34aedf155aa3da52f7f862e3bbf13d25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e575c67bbbfd493d7dbcfee7e382f016 = $(`<div id="html_e575c67bbbfd493d7dbcfee7e382f016" style="width: 100.0%; height: 100.0%;">Power Plant: PIACENZA (Gas)</div>`)[0];
+                popup_34aedf155aa3da52f7f862e3bbf13d25.setContent(html_e575c67bbbfd493d7dbcfee7e382f016);
+            
+        
+
+        marker_0484e1e0cc277fa37a88ef3fff3b5a2b.bindPopup(popup_34aedf155aa3da52f7f862e3bbf13d25)
+        ;
+
+        
+    
+    
+            var marker_a79c47c7f5984862ba3cd0f776f56c58 = L.marker(
+                [42.9954, 12.1995],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_0a473e800a5bf8a67a9c469963af9b81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a79c47c7f5984862ba3cd0f776f56c58.setIcon(icon_0a473e800a5bf8a67a9c469963af9b81);
+        
+    
+        var popup_b7f6e743a8bb36fd9c49dca02468197d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6de35c84e9267191e585c96b1ea63773 = $(`<div id="html_6de35c84e9267191e585c96b1ea63773" style="width: 100.0%; height: 100.0%;">Power Plant: PIETRAFITTA (Gas)</div>`)[0];
+                popup_b7f6e743a8bb36fd9c49dca02468197d.setContent(html_6de35c84e9267191e585c96b1ea63773);
+            
+        
+
+        marker_a79c47c7f5984862ba3cd0f776f56c58.bindPopup(popup_b7f6e743a8bb36fd9c49dca02468197d)
+        ;
+
+        
+    
+    
+            var marker_7fcb9ed8241acd8669a5c6c2c3b4b565 = L.marker(
+                [43.8235, 10.6023],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_52747251a5c913d12882a69b6e7040f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7fcb9ed8241acd8669a5c6c2c3b4b565.setIcon(icon_52747251a5c913d12882a69b6e7040f0);
+        
+    
+        var popup_54fa57605e8992595bea7c18e4ca7b3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_806bf584e22f04fa9418094ff4142c69 = $(`<div id="html_806bf584e22f04fa9418094ff4142c69" style="width: 100.0%; height: 100.0%;">Power Plant: PORCARI (Gas)</div>`)[0];
+                popup_54fa57605e8992595bea7c18e4ca7b3c.setContent(html_806bf584e22f04fa9418094ff4142c69);
+            
+        
+
+        marker_7fcb9ed8241acd8669a5c6c2c3b4b565.bindPopup(popup_54fa57605e8992595bea7c18e4ca7b3c)
+        ;
+
+        
+    
+    
+            var marker_2618dde494188088f1c577797992e557 = L.marker(
+                [44.4836, 12.2652],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_63f28a963f7c065dbc5e46408a9d64fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2618dde494188088f1c577797992e557.setIcon(icon_63f28a963f7c065dbc5e46408a9d64fc);
+        
+    
+        var popup_afc1b6c8fefe46eeb0b7c0e4e570e28d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e64fc479dbf998d8eb38d65bc9073507 = $(`<div id="html_e64fc479dbf998d8eb38d65bc9073507" style="width: 100.0%; height: 100.0%;">Power Plant: PORTO CORSINI (Gas)</div>`)[0];
+                popup_afc1b6c8fefe46eeb0b7c0e4e570e28d.setContent(html_e64fc479dbf998d8eb38d65bc9073507);
+            
+        
+
+        marker_2618dde494188088f1c577797992e557.bindPopup(popup_afc1b6c8fefe46eeb0b7c0e4e570e28d)
+        ;
+
+        
+    
+    
+            var marker_59e876b57a25f8bb48ac451d7896cdb9 = L.marker(
+                [45.0178, 12.2408],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_852219010830e6d5ca270f82053c516f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_59e876b57a25f8bb48ac451d7896cdb9.setIcon(icon_852219010830e6d5ca270f82053c516f);
+        
+    
+        var popup_3ea40636f653c75b22b4de7061b450cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40e6bde87bf0461a2fe3532744296f94 = $(`<div id="html_40e6bde87bf0461a2fe3532744296f94" style="width: 100.0%; height: 100.0%;">Power Plant: PORTO VIRO (Gas)</div>`)[0];
+                popup_3ea40636f653c75b22b4de7061b450cd.setContent(html_40e6bde87bf0461a2fe3532744296f94);
+            
+        
+
+        marker_59e876b57a25f8bb48ac451d7896cdb9.bindPopup(popup_3ea40636f653c75b22b4de7061b450cd)
+        ;
+
+        
+    
+    
+            var marker_401845987040cb253e97a10841230b60 = L.marker(
+                [37.14, 15.2159],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_0b390233fc0aa3eb9f523c4d3c3c61ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_401845987040cb253e97a10841230b60.setIcon(icon_0b390233fc0aa3eb9f523c4d3c3c61ae);
+        
+    
+        var popup_399b4cf9ab90fd7fba7a718119cea040 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d9a794e1188be3b6c3e0abc767fef08 = $(`<div id="html_4d9a794e1188be3b6c3e0abc767fef08" style="width: 100.0%; height: 100.0%;">Power Plant: PRIOLO C.LE (Gas)</div>`)[0];
+                popup_399b4cf9ab90fd7fba7a718119cea040.setContent(html_4d9a794e1188be3b6c3e0abc767fef08);
+            
+        
+
+        marker_401845987040cb253e97a10841230b60.bindPopup(popup_399b4cf9ab90fd7fba7a718119cea040)
+        ;
+
+        
+    
+    
+            var marker_e76f5b9089800ca6c58bf843e2242b0c = L.marker(
+                [42.8971, 12.5381],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_ebbd96354cc8337517eb7e96821b0519 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_e76f5b9089800ca6c58bf843e2242b0c.setIcon(icon_ebbd96354cc8337517eb7e96821b0519);
+        
+    
+        var popup_dc02dac0c730e667cfb80bf048db713a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36b1915841c6908f8688ab156fa3694c = $(`<div id="html_36b1915841c6908f8688ab156fa3694c" style="width: 100.0%; height: 100.0%;">Power Plant: Pietro Vannucci power station (Coal)</div>`)[0];
+                popup_dc02dac0c730e667cfb80bf048db713a.setContent(html_36b1915841c6908f8688ab156fa3694c);
+            
+        
+
+        marker_e76f5b9089800ca6c58bf843e2242b0c.bindPopup(popup_dc02dac0c730e667cfb80bf048db713a)
+        ;
+
+        
+    
+    
+            var marker_410c39fedb3eb8ae5ff514f02b0974e7 = L.marker(
+                [38.4453, 15.99],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_38764f7f583a75a184fa790436813cb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_410c39fedb3eb8ae5ff514f02b0974e7.setIcon(icon_38764f7f583a75a184fa790436813cb4);
+        
+    
+        var popup_a67007996ed70476c720b82d395374e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf9ba2db14aa0ad9643b1fc840b8bae9 = $(`<div id="html_cf9ba2db14aa0ad9643b1fc840b8bae9" style="width: 100.0%; height: 100.0%;">Power Plant: RIZZICONI (Gas)</div>`)[0];
+                popup_a67007996ed70476c720b82d395374e8.setContent(html_cf9ba2db14aa0ad9643b1fc840b8bae9);
+            
+        
+
+        marker_410c39fedb3eb8ae5ff514f02b0974e7.bindPopup(popup_a67007996ed70476c720b82d395374e8)
+        ;
+
+        
+    
+    
+            var marker_335c0cbd321217a44c261b99c53550f1 = L.marker(
+                [44.9167, 10.25],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_237d6f40a5e47fce002abf4b96a6573f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_335c0cbd321217a44c261b99c53550f1.setIcon(icon_237d6f40a5e47fce002abf4b96a6573f);
+        
+    
+        var popup_fd57bf6da6043b3680ec69c839c69698 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_173dc0eff98452db17f4cf8867742b61 = $(`<div id="html_173dc0eff98452db17f4cf8867742b61" style="width: 100.0%; height: 100.0%;">Power Plant: SAN QUIRICO (Gas)</div>`)[0];
+                popup_fd57bf6da6043b3680ec69c839c69698.setContent(html_173dc0eff98452db17f4cf8867742b61);
+            
+        
+
+        marker_335c0cbd321217a44c261b99c53550f1.bindPopup(popup_fd57bf6da6043b3680ec69c839c69698)
+        ;
+
+        
+    
+    
+            var marker_72992dc1f1dc5e9b516ab9989ced8296 = L.marker(
+                [39.1037, 9.0063],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_be9dd4f83935e0b82081d1ebe6b31854 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_72992dc1f1dc5e9b516ab9989ced8296.setIcon(icon_be9dd4f83935e0b82081d1ebe6b31854);
+        
+    
+        var popup_6f457b9fe3778c7a6ccbdc841a62d25c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7a9abb032438315a71cc1364b181760 = $(`<div id="html_d7a9abb032438315a71cc1364b181760" style="width: 100.0%; height: 100.0%;">Power Plant: SARLUX (Gas)</div>`)[0];
+                popup_6f457b9fe3778c7a6ccbdc841a62d25c.setContent(html_d7a9abb032438315a71cc1364b181760);
+            
+        
+
+        marker_72992dc1f1dc5e9b516ab9989ced8296.bindPopup(popup_6f457b9fe3778c7a6ccbdc841a62d25c)
+        ;
+
+        
+    
+    
+            var marker_fda3a0dfd1479f9b4be1069aace73b78 = L.marker(
+                [45.0522, 9.5072],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_7f1de8652626230b7b24efa987c2802d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fda3a0dfd1479f9b4be1069aace73b78.setIcon(icon_7f1de8652626230b7b24efa987c2802d);
+        
+    
+        var popup_937b822595db3d977f6a765072147762 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97acca99443c171f97c53a4e81b21200 = $(`<div id="html_97acca99443c171f97c53a4e81b21200" style="width: 100.0%; height: 100.0%;">Power Plant: SARMATO (Gas)</div>`)[0];
+                popup_937b822595db3d977f6a765072147762.setContent(html_97acca99443c171f97c53a4e81b21200);
+            
+        
+
+        marker_fda3a0dfd1479f9b4be1069aace73b78.bindPopup(popup_937b822595db3d977f6a765072147762)
+        ;
+
+        
+    
+    
+            var marker_f68d02024a45ee14246fbe3189fb8481 = L.marker(
+                [45.0265, 11.2522],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_be00e5042585f251051ae3348cd98df2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f68d02024a45ee14246fbe3189fb8481.setIcon(icon_be00e5042585f251051ae3348cd98df2);
+        
+    
+        var popup_e05afa1ee7a34f7d05527a1fe5589c6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12c11dd1640c6329f669f86f1eed85ca = $(`<div id="html_12c11dd1640c6329f669f86f1eed85ca" style="width: 100.0%; height: 100.0%;">Power Plant: SERMIDE (Gas)</div>`)[0];
+                popup_e05afa1ee7a34f7d05527a1fe5589c6f.setContent(html_12c11dd1640c6329f669f86f1eed85ca);
+            
+        
+
+        marker_f68d02024a45ee14246fbe3189fb8481.bindPopup(popup_e05afa1ee7a34f7d05527a1fe5589c6f)
+        ;
+
+        
+    
+    
+            var marker_0fc402957a20eb7638f5a9878e5d1f1c = L.marker(
+                [38.8759, 16.6569],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_6d19c05182c0d0b33f5e32b3a96fed85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0fc402957a20eb7638f5a9878e5d1f1c.setIcon(icon_6d19c05182c0d0b33f5e32b3a96fed85);
+        
+    
+        var popup_d9f755df521bcaa19e4fb048f544e1db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa91d80359ca65d9b600120be3f7fcc1 = $(`<div id="html_fa91d80359ca65d9b600120be3f7fcc1" style="width: 100.0%; height: 100.0%;">Power Plant: SIMERI CRICHI (Gas)</div>`)[0];
+                popup_d9f755df521bcaa19e4fb048f544e1db.setContent(html_fa91d80359ca65d9b600120be3f7fcc1);
+            
+        
+
+        marker_0fc402957a20eb7638f5a9878e5d1f1c.bindPopup(popup_d9f755df521bcaa19e4fb048f544e1db)
+        ;
+
+        
+    
+    
+            var marker_94ef28f4a5d7f423527751598701084d = L.marker(
+                [41.1025, 16.756],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_a85ef6f9659fe0c33846cf512c440d19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_94ef28f4a5d7f423527751598701084d.setIcon(icon_a85ef6f9659fe0c33846cf512c440d19);
+        
+    
+        var popup_de09970016cb4a0ca92f6ba4b7859ff5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14cf32b2be9e4e851a592ec286fd28a3 = $(`<div id="html_14cf32b2be9e4e851a592ec286fd28a3" style="width: 100.0%; height: 100.0%;">Power Plant: SORGENIA PUGLIA CENTRALE DI MODUGNO (Gas)</div>`)[0];
+                popup_de09970016cb4a0ca92f6ba4b7859ff5.setContent(html_14cf32b2be9e4e851a592ec286fd28a3);
+            
+        
+
+        marker_94ef28f4a5d7f423527751598701084d.bindPopup(popup_de09970016cb4a0ca92f6ba4b7859ff5)
+        ;
+
+        
+    
+    
+            var marker_370332e0c78541ebcaae4bd6cb3c0fab = L.marker(
+                [41.1783, 14.1129],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_93e3be27f5fc5562b006e7798d2f16e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_370332e0c78541ebcaae4bd6cb3c0fab.setIcon(icon_93e3be27f5fc5562b006e7798d2f16e6);
+        
+    
+        var popup_194804beb58393d8daf9c770228a6867 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83979488e66ecfe4b3d516b993846795 = $(`<div id="html_83979488e66ecfe4b3d516b993846795" style="width: 100.0%; height: 100.0%;">Power Plant: SPARANISE (Gas)</div>`)[0];
+                popup_194804beb58393d8daf9c770228a6867.setContent(html_83979488e66ecfe4b3d516b993846795);
+            
+        
+
+        marker_370332e0c78541ebcaae4bd6cb3c0fab.bindPopup(popup_194804beb58393d8daf9c770228a6867)
+        ;
+
+        
+    
+    
+            var marker_bfb3850a4349dd7102e104a7692e00d1 = L.marker(
+                [43.565, 11.4777],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_badd79ae9d38248fcb0091f9d78de085 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bfb3850a4349dd7102e104a7692e00d1.setIcon(icon_badd79ae9d38248fcb0091f9d78de085);
+        
+    
+        var popup_3cbbac29988153e2a432970fc6c4c3e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5de74a6dc2c0844f9448890f9e9c6058 = $(`<div id="html_5de74a6dc2c0844f9448890f9e9c6058" style="width: 100.0%; height: 100.0%;">Power Plant: Santa Barbara (Gas)</div>`)[0];
+                popup_3cbbac29988153e2a432970fc6c4c3e3.setContent(html_5de74a6dc2c0844f9448890f9e9c6058);
+            
+        
+
+        marker_bfb3850a4349dd7102e104a7692e00d1.bindPopup(popup_3cbbac29988153e2a432970fc6c4c3e3)
+        ;
+
+        
+    
+    
+            var marker_8bdd1963d4bc3833a83e9d50a09de2b2 = L.marker(
+                [39.1961, 8.4002],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_a8c87dca675a56433c3419637ecdc12e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_8bdd1963d4bc3833a83e9d50a09de2b2.setIcon(icon_a8c87dca675a56433c3419637ecdc12e);
+        
+    
+        var popup_c9194f41fbe058ca5d476fcf35b17cb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94e7773d830781e5a217ec6ab788e3d8 = $(`<div id="html_94e7773d830781e5a217ec6ab788e3d8" style="width: 100.0%; height: 100.0%;">Power Plant: Sulcis power station (Coal)</div>`)[0];
+                popup_c9194f41fbe058ca5d476fcf35b17cb3.setContent(html_94e7773d830781e5a217ec6ab788e3d8);
+            
+        
+
+        marker_8bdd1963d4bc3833a83e9d50a09de2b2.bindPopup(popup_c9194f41fbe058ca5d476fcf35b17cb3)
+        ;
+
+        
+    
+    
+            var marker_4db62669890d3cf5ffc979fe81ee1583 = L.marker(
+                [45.3325, 9.4364],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_844aea312fad7c573e9432639966c4f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4db62669890d3cf5ffc979fe81ee1583.setIcon(icon_844aea312fad7c573e9432639966c4f9);
+        
+    
+        var popup_fb501005f22993ceca5ca1f1a55f2382 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afb00c7de0f47bee7d92063841d18a1c = $(`<div id="html_afb00c7de0f47bee7d92063841d18a1c" style="width: 100.0%; height: 100.0%;">Power Plant: TAVAZZANO (Gas)</div>`)[0];
+                popup_fb501005f22993ceca5ca1f1a55f2382.setContent(html_afb00c7de0f47bee7d92063841d18a1c);
+            
+        
+
+        marker_4db62669890d3cf5ffc979fe81ee1583.bindPopup(popup_fb501005f22993ceca5ca1f1a55f2382)
+        ;
+
+        
+    
+    
+            var marker_eaa9a3027ed2d1a5ab32a8c386f2dcc2 = L.marker(
+                [37.9684, 13.7512],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_c5d798b94266604b6d590e47251d4701 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eaa9a3027ed2d1a5ab32a8c386f2dcc2.setIcon(icon_c5d798b94266604b6d590e47251d4701);
+        
+    
+        var popup_b1316fbe555817fc70b9625f803e6da5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82a92df86301990844bbd682dde9dafa = $(`<div id="html_82a92df86301990844bbd682dde9dafa" style="width: 100.0%; height: 100.0%;">Power Plant: TERMINI IMERESE C.LE (Gas)</div>`)[0];
+                popup_b1316fbe555817fc70b9625f803e6da5.setContent(html_82a92df86301990844bbd682dde9dafa);
+            
+        
+
+        marker_eaa9a3027ed2d1a5ab32a8c386f2dcc2.bindPopup(popup_b1316fbe555817fc70b9625f803e6da5)
+        ;
+
+        
+    
+    
+            var marker_b6eaa627c27769d0fd445e1af89639b8 = L.marker(
+                [42.554, 12.6176],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_4bee30f8d9d3242dd6e0811528417931 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b6eaa627c27769d0fd445e1af89639b8.setIcon(icon_4bee30f8d9d3242dd6e0811528417931);
+        
+    
+        var popup_2f88e58c26c1b5480677657def64a68c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_598d8dba0417d75c29451760b4ff4cbc = $(`<div id="html_598d8dba0417d75c29451760b4ff4cbc" style="width: 100.0%; height: 100.0%;">Power Plant: TERNI (Gas)</div>`)[0];
+                popup_2f88e58c26c1b5480677657def64a68c.setContent(html_598d8dba0417d75c29451760b4ff4cbc);
+            
+        
+
+        marker_b6eaa627c27769d0fd445e1af89639b8.bindPopup(popup_2f88e58c26c1b5480677657def64a68c)
+        ;
+
+        
+    
+    
+            var marker_6d8fcf88b55dd3b0bbeda8d90ea9e847 = L.marker(
+                [41.8117, 12.4228],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_efacb98ac312e08d6ab455941a007153 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6d8fcf88b55dd3b0bbeda8d90ea9e847.setIcon(icon_efacb98ac312e08d6ab455941a007153);
+        
+    
+        var popup_407fee802d2e94d492385dd9068b4b89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3be6edc15ed6ced604d54fe5cbb75e2e = $(`<div id="html_3be6edc15ed6ced604d54fe5cbb75e2e" style="width: 100.0%; height: 100.0%;">Power Plant: TOR DI VALLE (Gas)</div>`)[0];
+                popup_407fee802d2e94d492385dd9068b4b89.setContent(html_3be6edc15ed6ced604d54fe5cbb75e2e);
+            
+        
+
+        marker_6d8fcf88b55dd3b0bbeda8d90ea9e847.bindPopup(popup_407fee802d2e94d492385dd9068b4b89)
+        ;
+
+        
+    
+    
+            var marker_179a7c1040f39a4cd0918b2ed66e4c43 = L.marker(
+                [42.1241, 11.7624],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_6de510d159ea61d289acf07468f0c31f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_179a7c1040f39a4cd0918b2ed66e4c43.setIcon(icon_6de510d159ea61d289acf07468f0c31f);
+        
+    
+        var popup_69637940a40e070d281d014c626e2d37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1da992cb5376695b008dd9407407a8c = $(`<div id="html_f1da992cb5376695b008dd9407407a8c" style="width: 100.0%; height: 100.0%;">Power Plant: TORREVALDALIGA South (Gas)</div>`)[0];
+                popup_69637940a40e070d281d014c626e2d37.setContent(html_f1da992cb5376695b008dd9407407a8c);
+            
+        
+
+        marker_179a7c1040f39a4cd0918b2ed66e4c43.bindPopup(popup_69637940a40e070d281d014c626e2d37)
+        ;
+
+        
+    
+    
+            var marker_069f9f4e44c05080eeab7806ff2eb4e8 = L.marker(
+                [45.817, 13.2891],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_e9f2d8a9c6e112ef26def979c8ba2437 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_069f9f4e44c05080eeab7806ff2eb4e8.setIcon(icon_e9f2d8a9c6e112ef26def979c8ba2437);
+        
+    
+        var popup_ec363ec725ccd0b571f10947bc914e90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4be21b43fdf2e261d84283bbfc91bae0 = $(`<div id="html_4be21b43fdf2e261d84283bbfc91bae0" style="width: 100.0%; height: 100.0%;">Power Plant: TORVISCOSA (Gas)</div>`)[0];
+                popup_ec363ec725ccd0b571f10947bc914e90.setContent(html_4be21b43fdf2e261d84283bbfc91bae0);
+            
+        
+
+        marker_069f9f4e44c05080eeab7806ff2eb4e8.bindPopup(popup_ec363ec725ccd0b571f10947bc914e90)
+        ;
+
+        
+    
+    
+            var marker_2070017c4e33bc71689a3bff41d53eb5 = L.marker(
+                [38.0158, 12.5108],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_e427868755c73f1001e4c66465d24859 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2070017c4e33bc71689a3bff41d53eb5.setIcon(icon_e427868755c73f1001e4c66465d24859);
+        
+    
+        var popup_1a969b12fbdc5260f787bb6d14a2989d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69d5c24a02c7e9b544a6c3e2e371de1d = $(`<div id="html_69d5c24a02c7e9b544a6c3e2e371de1d" style="width: 100.0%; height: 100.0%;">Power Plant: TRAPANI C.LE (Gas)</div>`)[0];
+                popup_1a969b12fbdc5260f787bb6d14a2989d.setContent(html_69d5c24a02c7e9b544a6c3e2e371de1d);
+            
+        
+
+        marker_2070017c4e33bc71689a3bff41d53eb5.bindPopup(popup_1a969b12fbdc5260f787bb6d14a2989d)
+        ;
+
+        
+    
+    
+            var marker_a09a48d7a2895dcfc72701bc6606e91d = L.marker(
+                [42.1269, 11.7583],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_1a9eed2d97c45ad09779f0c84f204dcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_a09a48d7a2895dcfc72701bc6606e91d.setIcon(icon_1a9eed2d97c45ad09779f0c84f204dcf);
+        
+    
+        var popup_29c8ba215a7ee20d93751daf4453f803 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a5472de661ce28798f98f840531a495 = $(`<div id="html_0a5472de661ce28798f98f840531a495" style="width: 100.0%; height: 100.0%;">Power Plant: Torrevaldaliga Nord power station (Coal)</div>`)[0];
+                popup_29c8ba215a7ee20d93751daf4453f803.setContent(html_0a5472de661ce28798f98f840531a495);
+            
+        
+
+        marker_a09a48d7a2895dcfc72701bc6606e91d.bindPopup(popup_29c8ba215a7ee20d93751daf4453f803)
+        ;
+
+        
+    
+    
+            var marker_63a5fc650f418145eeba008751310c01 = L.marker(
+                [44.2755, 8.4305],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_7c900c09806cdcc7262b562afa055cf1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_63a5fc650f418145eeba008751310c01.setIcon(icon_7c900c09806cdcc7262b562afa055cf1);
+        
+    
+        var popup_d6e4f130b5bb5a3d98063b0847a63792 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b585f8f3194a3499bd2390a3cdd60365 = $(`<div id="html_b585f8f3194a3499bd2390a3cdd60365" style="width: 100.0%; height: 100.0%;">Power Plant: VADO Ligure (Gas)</div>`)[0];
+                popup_d6e4f130b5bb5a3d98063b0847a63792.setContent(html_b585f8f3194a3499bd2390a3cdd60365);
+            
+        
+
+        marker_63a5fc650f418145eeba008751310c01.bindPopup(popup_d6e4f130b5bb5a3d98063b0847a63792)
+        ;
+
+        
+    
+    
+            var marker_794c7c29e76591d812222da278cfbc80 = L.marker(
+                [44.5947, 7.4858],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_ee8e76e3b58b602b00f9ed5167eeb3da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_794c7c29e76591d812222da278cfbc80.setIcon(icon_ee8e76e3b58b602b00f9ed5167eeb3da);
+        
+    
+        var popup_ff9aa635960e8b30aa4ce190eb594723 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b658ce683603c49cdd121249d4e47efe = $(`<div id="html_b658ce683603c49cdd121249d4e47efe" style="width: 100.0%; height: 100.0%;">Power Plant: VERZUOLO (Gas)</div>`)[0];
+                popup_ff9aa635960e8b30aa4ce190eb594723.setContent(html_b658ce683603c49cdd121249d4e47efe);
+            
+        
+
+        marker_794c7c29e76591d812222da278cfbc80.bindPopup(popup_ff9aa635960e8b30aa4ce190eb594723)
+        ;
+
+        
+    
+    
+            var marker_70becaaebd6219d7e730d7fd915609c5 = L.marker(
+                [45.0296, 8.9723],
+                {}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+            var icon_7955d4a99b34361b61c31607cdc724ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_70becaaebd6219d7e730d7fd915609c5.setIcon(icon_7955d4a99b34361b61c31607cdc724ed);
+        
+    
+        var popup_ee89b8fdc40cbb120c7814c1a0eaf832 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_184ffbd2cb95beb827589f222a7dfcf2 = $(`<div id="html_184ffbd2cb95beb827589f222a7dfcf2" style="width: 100.0%; height: 100.0%;">Power Plant: VOGHERA (Gas)</div>`)[0];
+                popup_ee89b8fdc40cbb120c7814c1a0eaf832.setContent(html_184ffbd2cb95beb827589f222a7dfcf2);
+            
+        
+
+        marker_70becaaebd6219d7e730d7fd915609c5.bindPopup(popup_ee89b8fdc40cbb120c7814c1a0eaf832)
+        ;
+
+        
+    
+    
+            var circle_marker_0cff43989dcb8aaddd076a24e3fc9289 = L.circleMarker(
+                [45.46277799999999, 9.195833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_8a396f48f0833d34c43af6bf67cd1de7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_350787001487795bd060c3d37150504e = $(`<div id="html_350787001487795bd060c3d37150504e" style="width: 100.0%; height: 100.0%;">City: Milano | Station Type: traffic urban</div>`)[0];
+                popup_8a396f48f0833d34c43af6bf67cd1de7.setContent(html_350787001487795bd060c3d37150504e);
+            
+        
+
+        circle_marker_0cff43989dcb8aaddd076a24e3fc9289.bindPopup(popup_8a396f48f0833d34c43af6bf67cd1de7)
+        ;
+
+        
+    
+    
+            var circle_marker_6054d971f00a1f23ff6ea9e31a42a6b5 = L.circleMarker(
+                [45.482778, 9.3275],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_1a005170b1c4206f2128c9290e6fcc64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79ff789983d6601c53e8cff349fc7801 = $(`<div id="html_79ff789983d6601c53e8cff349fc7801" style="width: 100.0%; height: 100.0%;">City: Pioltello | Station Type: background urban</div>`)[0];
+                popup_1a005170b1c4206f2128c9290e6fcc64.setContent(html_79ff789983d6601c53e8cff349fc7801);
+            
+        
+
+        circle_marker_6054d971f00a1f23ff6ea9e31a42a6b5.bindPopup(popup_1a005170b1c4206f2128c9290e6fcc64)
+        ;
+
+        
+    
+    
+            var circle_marker_5eb42467d46db91b62079e82195147db = L.circleMarker(
+                [44.79361, 10.33167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_d884214751ccd22de90a8d455b1eae6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85d356da8b0dc455b756223cbf0916e8 = $(`<div id="html_85d356da8b0dc455b756223cbf0916e8" style="width: 100.0%; height: 100.0%;">City: Parma | Station Type: background urban</div>`)[0];
+                popup_d884214751ccd22de90a8d455b1eae6d.setContent(html_85d356da8b0dc455b756223cbf0916e8);
+            
+        
+
+        circle_marker_5eb42467d46db91b62079e82195147db.bindPopup(popup_d884214751ccd22de90a8d455b1eae6d)
+        ;
+
+        
+    
+    
+            var circle_marker_2884d8842eae0a5dde47c7f84c934ad1 = L.circleMarker(
+                [45.279167, 10.007222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_f004cb693015669b5aaad6bd0a22052c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_031a6f5ad8a5eea8acc0ad78dd4e109a = $(`<div id="html_031a6f5ad8a5eea8acc0ad78dd4e109a" style="width: 100.0%; height: 100.0%;">City: Cremona | Station Type: industrial rural</div>`)[0];
+                popup_f004cb693015669b5aaad6bd0a22052c.setContent(html_031a6f5ad8a5eea8acc0ad78dd4e109a);
+            
+        
+
+        circle_marker_2884d8842eae0a5dde47c7f84c934ad1.bindPopup(popup_f004cb693015669b5aaad6bd0a22052c)
+        ;
+
+        
+    
+    
+            var circle_marker_a011ee0963c595b61f1aa4d2cffaa61e = L.circleMarker(
+                [44.48333, 11.355000000000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_f9b70bfa1c749fed014e36cc246ccfcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2571eaec67d96af2b388b125cbec26bc = $(`<div id="html_2571eaec67d96af2b388b125cbec26bc" style="width: 100.0%; height: 100.0%;">City: Bologna | Station Type: background urban</div>`)[0];
+                popup_f9b70bfa1c749fed014e36cc246ccfcb.setContent(html_2571eaec67d96af2b388b125cbec26bc);
+            
+        
+
+        circle_marker_a011ee0963c595b61f1aa4d2cffaa61e.bindPopup(popup_f9b70bfa1c749fed014e36cc246ccfcb)
+        ;
+
+        
+    
+    
+            var circle_marker_994869d906f5566d3e69073d22dc0845 = L.circleMarker(
+                [45.19388899999999, 9.164722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_b1d5c6d9546258578477bb1adfce9c54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_805884fbc88c1790099b123d833c813c = $(`<div id="html_805884fbc88c1790099b123d833c813c" style="width: 100.0%; height: 100.0%;">City: Pavia | Station Type: background urban</div>`)[0];
+                popup_b1d5c6d9546258578477bb1adfce9c54.setContent(html_805884fbc88c1790099b123d833c813c);
+            
+        
+
+        circle_marker_994869d906f5566d3e69073d22dc0845.bindPopup(popup_b1d5c6d9546258578477bb1adfce9c54)
+        ;
+
+        
+    
+    
+            var circle_marker_9a99b15c606deca0ca294ea1349ea8ff = L.circleMarker(
+                [44.690833, 10.664721999999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_301b7ffbabcccf8bfaca99314834d183 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b72d0dd82872ebdc99a73ae8d074bad6 = $(`<div id="html_b72d0dd82872ebdc99a73ae8d074bad6" style="width: 100.0%; height: 100.0%;">City: ReggioNellEmilia | Station Type: background urban</div>`)[0];
+                popup_301b7ffbabcccf8bfaca99314834d183.setContent(html_b72d0dd82872ebdc99a73ae8d074bad6);
+            
+        
+
+        circle_marker_9a99b15c606deca0ca294ea1349ea8ff.bindPopup(popup_301b7ffbabcccf8bfaca99314834d183)
+        ;
+
+        
+    
+    
+            var circle_marker_f1446d66b2d2cfc4791d4bc3f2671685 = L.circleMarker(
+                [44.28708999999999, 8.43169],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_a8189ca4d9ebf9bceec316fc4d5c0e9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52897c14fd2f8e4796ab4a1c1c0a38a5 = $(`<div id="html_52897c14fd2f8e4796ab4a1c1c0a38a5" style="width: 100.0%; height: 100.0%;">City: Savona | Station Type: industrial suburban</div>`)[0];
+                popup_a8189ca4d9ebf9bceec316fc4d5c0e9c.setContent(html_52897c14fd2f8e4796ab4a1c1c0a38a5);
+            
+        
+
+        circle_marker_f1446d66b2d2cfc4791d4bc3f2671685.bindPopup(popup_a8189ca4d9ebf9bceec316fc4d5c0e9c)
+        ;
+
+        
+    
+    
+            var circle_marker_fea94936a43e13d42a281124dd929496 = L.circleMarker(
+                [45.58288714, 8.83449244],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_6636003c5c19f26b3995eacb31bdf0be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e243c540894e8b9891f21812f50f91d = $(`<div id="html_2e243c540894e8b9891f21812f50f91d" style="width: 100.0%; height: 100.0%;">City: BustoArsizio | Station Type: background suburban</div>`)[0];
+                popup_6636003c5c19f26b3995eacb31bdf0be.setContent(html_2e243c540894e8b9891f21812f50f91d);
+            
+        
+
+        circle_marker_fea94936a43e13d42a281124dd929496.bindPopup(popup_6636003c5c19f26b3995eacb31bdf0be)
+        ;
+
+        
+    
+    
+            var circle_marker_5bb6cf38f31376696e1805ce8726f1aa = L.circleMarker(
+                [45.6725, 12.238611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_3dd890ff0fae59a28e5484711a0946db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b16b4035db801d37bd1db509f9aa7f9 = $(`<div id="html_1b16b4035db801d37bd1db509f9aa7f9" style="width: 100.0%; height: 100.0%;">City: Treviso | Station Type: background urban</div>`)[0];
+                popup_3dd890ff0fae59a28e5484711a0946db.setContent(html_1b16b4035db801d37bd1db509f9aa7f9);
+            
+        
+
+        circle_marker_5bb6cf38f31376696e1805ce8726f1aa.bindPopup(popup_3dd890ff0fae59a28e5484711a0946db)
+        ;
+
+        
+    
+    
+            var circle_marker_e8f8e10f6ef80db38fb45802c1028e48 = L.circleMarker(
+                [45.626944, 9.024167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_6a598376e1b9ff5fadb7808d5c02bc6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6884263a42de0f39dbdbe51301719fa = $(`<div id="html_f6884263a42de0f39dbdbe51301719fa" style="width: 100.0%; height: 100.0%;">City: Saronno | Station Type: background urban</div>`)[0];
+                popup_6a598376e1b9ff5fadb7808d5c02bc6f.setContent(html_f6884263a42de0f39dbdbe51301719fa);
+            
+        
+
+        circle_marker_e8f8e10f6ef80db38fb45802c1028e48.bindPopup(popup_6a598376e1b9ff5fadb7808d5c02bc6f)
+        ;
+
+        
+    
+    
+            var circle_marker_46be2566b7aba76106624c7e76399838 = L.circleMarker(
+                [45.47833, 9.23583],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_819d8b6c89c21fe8dba37013dcc2ddaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62b146fb38b37393f6c51a6c8f45f727 = $(`<div id="html_62b146fb38b37393f6c51a6c8f45f727" style="width: 100.0%; height: 100.0%;">City: Milano | Station Type: background urban</div>`)[0];
+                popup_819d8b6c89c21fe8dba37013dcc2ddaa.setContent(html_62b146fb38b37393f6c51a6c8f45f727);
+            
+        
+
+        circle_marker_46be2566b7aba76106624c7e76399838.bindPopup(popup_819d8b6c89c21fe8dba37013dcc2ddaa)
+        ;
+
+        
+    
+    
+            var circle_marker_c3a752a6074ec1540fca3cb35aea840e = L.circleMarker(
+                [45.515278, 10.219444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_f6154a3aa3f9796ffbbe1a8b235a8181 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e2136356a96fdd83860b5139d6287ec = $(`<div id="html_5e2136356a96fdd83860b5139d6287ec" style="width: 100.0%; height: 100.0%;">City: Brescia | Station Type: background urban</div>`)[0];
+                popup_f6154a3aa3f9796ffbbe1a8b235a8181.setContent(html_5e2136356a96fdd83860b5139d6287ec);
+            
+        
+
+        circle_marker_c3a752a6074ec1540fca3cb35aea840e.bindPopup(popup_f6154a3aa3f9796ffbbe1a8b235a8181)
+        ;
+
+        
+    
+    
+            var circle_marker_6a0662a366f01c05cb2c84ca43bbad26 = L.circleMarker(
+                [45.142222, 10.045833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_650fff0696ca6a7d64eeddc16d03ce70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d2cebcad0627287bcad297d97fb48ca = $(`<div id="html_0d2cebcad0627287bcad297d97fb48ca" style="width: 100.0%; height: 100.0%;">City: Cremona | Station Type: background urban</div>`)[0];
+                popup_650fff0696ca6a7d64eeddc16d03ce70.setContent(html_0d2cebcad0627287bcad297d97fb48ca);
+            
+        
+
+        circle_marker_6a0662a366f01c05cb2c84ca43bbad26.bindPopup(popup_650fff0696ca6a7d64eeddc16d03ce70)
+        ;
+
+        
+    
+    
+            var circle_marker_c687a853db7ff6cdf67df819ca16a7d5 = L.circleMarker(
+                [45.58111, 9.27444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_bbf8c9bdedeb0af9d0b1982676f11856 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cc34caf8f0db4d410a5c2deaa27794d = $(`<div id="html_7cc34caf8f0db4d410a5c2deaa27794d" style="width: 100.0%; height: 100.0%;">City: Monza | Station Type: background urban</div>`)[0];
+                popup_bbf8c9bdedeb0af9d0b1982676f11856.setContent(html_7cc34caf8f0db4d410a5c2deaa27794d);
+            
+        
+
+        circle_marker_c687a853db7ff6cdf67df819ca16a7d5.bindPopup(popup_bbf8c9bdedeb0af9d0b1982676f11856)
+        ;
+
+        
+    
+    
+            var circle_marker_d1f641b3a9db502c1fb43f524edd9583 = L.circleMarker(
+                [45.11444399999999, 8.875],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_a8b44992de0c4d4e505c8c43b99be6cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f2a0a0797207e20353a8321d258dfb2 = $(`<div id="html_9f2a0a0797207e20353a8321d258dfb2" style="width: 100.0%; height: 100.0%;">City: Pavia | Station Type: industrial rural</div>`)[0];
+                popup_a8b44992de0c4d4e505c8c43b99be6cd.setContent(html_9f2a0a0797207e20353a8321d258dfb2);
+            
+        
+
+        circle_marker_d1f641b3a9db502c1fb43f524edd9583.bindPopup(popup_a8b44992de0c4d4e505c8c43b99be6cd)
+        ;
+
+        
+    
+    
+            var circle_marker_5d23a8ae8ec704368b4f42b85253c2ba = L.circleMarker(
+                [44.65060999999999, 10.90633],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_9f80874576f62cf88ca3df0b4942e54c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d84a1909f76c112b9dd568e9c64c4c15 = $(`<div id="html_d84a1909f76c112b9dd568e9c64c4c15" style="width: 100.0%; height: 100.0%;">City: Modena | Station Type: background urban</div>`)[0];
+                popup_9f80874576f62cf88ca3df0b4942e54c.setContent(html_d84a1909f76c112b9dd568e9c64c4c15);
+            
+        
+
+        circle_marker_5d23a8ae8ec704368b4f42b85253c2ba.bindPopup(popup_9f80874576f62cf88ca3df0b4942e54c)
+        ;
+
+        
+    
+    
+            var circle_marker_d2ad46e2dd782803baa6cb4e44205349 = L.circleMarker(
+                [44.9203, 8.6232],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_0a10d09598497a3721a6328a246ba0c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a8777d04b3885c52fb1fe5f1f9d8622 = $(`<div id="html_3a8777d04b3885c52fb1fe5f1f9d8622" style="width: 100.0%; height: 100.0%;">City: Alessandria | Station Type: background urban</div>`)[0];
+                popup_0a10d09598497a3721a6328a246ba0c2.setContent(html_3a8777d04b3885c52fb1fe5f1f9d8622);
+            
+        
+
+        circle_marker_d2ad46e2dd782803baa6cb4e44205349.bindPopup(popup_0a10d09598497a3721a6328a246ba0c2)
+        ;
+
+        
+    
+    
+            var circle_marker_764449e68efce918b2d12e44b4633f5e = L.circleMarker(
+                [45.22666699999999, 11.665833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_450b508b31ce2ab45c6b98e9ed92dc13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_632e2c5e9a10f0109d5836d449c61bb7 = $(`<div id="html_632e2c5e9a10f0109d5836d449c61bb7" style="width: 100.0%; height: 100.0%;">City: Este | Station Type: industrial suburban</div>`)[0];
+                popup_450b508b31ce2ab45c6b98e9ed92dc13.setContent(html_632e2c5e9a10f0109d5836d449c61bb7);
+            
+        
+
+        circle_marker_764449e68efce918b2d12e44b4633f5e.bindPopup(popup_450b508b31ce2ab45c6b98e9ed92dc13)
+        ;
+
+        
+    
+    
+            var circle_marker_8be1a0e3bb17f34d19f9416d22b70294 = L.circleMarker(
+                [45.0419, 7.625899999999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_fb8dfc76972f0838d154c5b0b95e770f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8423c4caa9f3dc43b730270b969d4ea = $(`<div id="html_f8423c4caa9f3dc43b730270b969d4ea" style="width: 100.0%; height: 100.0%;">City:  Torino | Station Type: background urban</div>`)[0];
+                popup_fb8dfc76972f0838d154c5b0b95e770f.setContent(html_f8423c4caa9f3dc43b730270b969d4ea);
+            
+        
+
+        circle_marker_8be1a0e3bb17f34d19f9416d22b70294.bindPopup(popup_fb8dfc76972f0838d154c5b0b95e770f)
+        ;
+
+        
+    
+    
+            var circle_marker_c066d1f3ebf367df60fd4f1cbb1c2225 = L.circleMarker(
+                [44.825, 11.649722000000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_89dec6da0da53d1270658fada0b9812f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c261237cfb0bd9b964034cae524a298f = $(`<div id="html_c261237cfb0bd9b964034cae524a298f" style="width: 100.0%; height: 100.0%;">City: Ferrara | Station Type: background urban</div>`)[0];
+                popup_89dec6da0da53d1270658fada0b9812f.setContent(html_c261237cfb0bd9b964034cae524a298f);
+            
+        
+
+        circle_marker_c066d1f3ebf367df60fd4f1cbb1c2225.bindPopup(popup_89dec6da0da53d1270658fada0b9812f)
+        ;
+
+        
+    
+    
+            var circle_marker_7ce58a2d96306e50b8d68fae86bbb945 = L.circleMarker(
+                [45.038333, 9.669166999999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_e11cdc3eec0a89e45665d150e19fc7ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_295838950a64dc142a68cf160b386f64 = $(`<div id="html_295838950a64dc142a68cf160b386f64" style="width: 100.0%; height: 100.0%;">City: Piacenza | Station Type: background urban</div>`)[0];
+                popup_e11cdc3eec0a89e45665d150e19fc7ab.setContent(html_295838950a64dc142a68cf160b386f64);
+            
+        
+
+        circle_marker_7ce58a2d96306e50b8d68fae86bbb945.bindPopup(popup_e11cdc3eec0a89e45665d150e19fc7ab)
+        ;
+
+        
+    
+    
+            var circle_marker_dd5e30aff72b076d7d240134c3dce7ca = L.circleMarker(
+                [45.148333, 9.940278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_ab349cdc07883567d6bd0b160127913f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17c4353f29d96ce84f282dad405a6713 = $(`<div id="html_17c4353f29d96ce84f282dad405a6713" style="width: 100.0%; height: 100.0%;">City: Cremona | Station Type: industrial rural</div>`)[0];
+                popup_ab349cdc07883567d6bd0b160127913f.setContent(html_17c4353f29d96ce84f282dad405a6713);
+            
+        
+
+        circle_marker_dd5e30aff72b076d7d240134c3dce7ca.bindPopup(popup_ab349cdc07883567d6bd0b160127913f)
+        ;
+
+        
+    
+    
+            var circle_marker_64d9c50f80e2a96d7945bc95578c8ba0 = L.circleMarker(
+                [44.49999999999999, 11.286110999999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_d139952d061751d25f0389b306eec6f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_732db4723b32ace2f16befba4c1ae850 = $(`<div id="html_732db4723b32ace2f16befba4c1ae850" style="width: 100.0%; height: 100.0%;">City: Bologna | Station Type: background suburban</div>`)[0];
+                popup_d139952d061751d25f0389b306eec6f7.setContent(html_732db4723b32ace2f16befba4c1ae850);
+            
+        
+
+        circle_marker_64d9c50f80e2a96d7945bc95578c8ba0.bindPopup(popup_d139952d061751d25f0389b306eec6f7)
+        ;
+
+        
+    
+    
+            var circle_marker_20baafee88adce48e2b1cef6893274cb = L.circleMarker(
+                [45.60222000000001, 9.27611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_dffddaab9ee197541bb4cc87a586b531 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_729771a999ccaf64aed2f63600233903 = $(`<div id="html_729771a999ccaf64aed2f63600233903" style="width: 100.0%; height: 100.0%;">City: Monza | Station Type: background suburban</div>`)[0];
+                popup_dffddaab9ee197541bb4cc87a586b531.setContent(html_729771a999ccaf64aed2f63600233903);
+            
+        
+
+        circle_marker_20baafee88adce48e2b1cef6893274cb.bindPopup(popup_dffddaab9ee197541bb4cc87a586b531)
+        ;
+
+        
+    
+    
+            var circle_marker_a32ddcc0e827f555d23b2e326e869e4a = L.circleMarker(
+                [45.0249, 7.6491],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_4b39827537668ea635a8206caaf42b50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a00c558b63dbb261f5e6e38af83c3b4b = $(`<div id="html_a00c558b63dbb261f5e6e38af83c3b4b" style="width: 100.0%; height: 100.0%;">City: Torino | Station Type: background urban</div>`)[0];
+                popup_4b39827537668ea635a8206caaf42b50.setContent(html_a00c558b63dbb261f5e6e38af83c3b4b);
+            
+        
+
+        circle_marker_a32ddcc0e827f555d23b2e326e869e4a.bindPopup(popup_4b39827537668ea635a8206caaf42b50)
+        ;
+
+        
+    
+    
+            var circle_marker_63e9f1f0cf261e96c75a5fc7b87cb67f = L.circleMarker(
+                [45.5476, 9.16698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_87e0812f87c1ee980c9f70654e389a22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37f9bd26f15c46c11e26fec380006c96 = $(`<div id="html_37f9bd26f15c46c11e26fec380006c96" style="width: 100.0%; height: 100.0%;">City: Cormano | Station Type: background urban</div>`)[0];
+                popup_87e0812f87c1ee980c9f70654e389a22.setContent(html_37f9bd26f15c46c11e26fec380006c96);
+            
+        
+
+        circle_marker_63e9f1f0cf261e96c75a5fc7b87cb67f.bindPopup(popup_87e0812f87c1ee980c9f70654e389a22)
+        ;
+
+        
+    
+    
+            var circle_marker_0e3925e06e6066345712b7039ba04337 = L.circleMarker(
+                [45.43969999999998, 8.6204],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bce981d2a47ede615913fd5bb1241c9b);
+        
+    
+        var popup_3142383a74e5515641d15783942e43b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83eb25c84d3728a6f554b61a7825cc81 = $(`<div id="html_83eb25c84d3728a6f554b61a7825cc81" style="width: 100.0%; height: 100.0%;">City: Novara | Station Type: background urban</div>`)[0];
+                popup_3142383a74e5515641d15783942e43b7.setContent(html_83eb25c84d3728a6f554b61a7825cc81);
+            
+        
+
+        circle_marker_0e3925e06e6066345712b7039ba04337.bindPopup(popup_3142383a74e5515641d15783942e43b7)
+        ;
+
+        
+    
+</script>
+</html>
